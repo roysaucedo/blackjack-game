@@ -1,11 +1,13 @@
 let firstCard = 10;
-let secondCard = 11;
+let secondCard = 4;
 let sum = firstCard + secondCard;
 let hasBlackjack = false;
 let isALive = true;
 let message = "";
 
-console.log(sum);
+let messageEl = document.getElementById("message-el");
+
+console.log(messageEl);
 
 function startGame() {
   if (sum <= 20) {
@@ -25,4 +27,6 @@ function startGame() {
   console.log(isALive);
 
   console.log(message);
+
+  messageEl.textContent = message
 }
